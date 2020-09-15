@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The Pixel3ROM Project
+# Copyright (C) 2020 Rohie OS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -33,12 +33,25 @@ $(eval include $(BUILD_PREBUILT))
 endef
 
 font_src_files := \
-    GoogleSans-BoldItalic.ttf \
-    GoogleSans-Bold.ttf \
-    GoogleSans-Italic.ttf \
-    GoogleSans-MediumItalic.ttf \
-    GoogleSans-Medium.ttf \
-    GoogleSans-Regular.ttf
+    Condensed-Bold.ttf \
+    Condensed-BoldItalic.ttf \
+    Condensed-Italic.ttf \
+    Condensed-Light.ttf \
+    Condensed-LightItalic.ttf \
+    Condensed-Medium.ttf \
+    Condensed-MediumItalic.ttf \
+    Rohie-Thin.ttf \
+    Rohie-ThinItalic.ttf \
+    Rohie-Light.ttf \
+    Rohie-LightItalic.ttf \
+    Rohie-Regular.ttf \
+    Rohie-Italic.ttf \
+    Rohie-Medium.ttf \
+    Rohie-MediumItalic.ttf \
+    Rohie-Bold.ttf \
+    Rohie-BoldItalic.ttf \
+    Rohie-Black.ttf \
+    Rohie-BlackItalic.ttf
 
 $(foreach f, $(font_src_files), $(call build-one-font-module, $(f)))
 
